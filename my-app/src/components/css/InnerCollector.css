@@ -1,0 +1,104 @@
+import "./InnerCollector.css";
+
+import Avatar1 from "../../assets/avatars/avatar1.png";
+import Avatar2 from "../../assets/avatars/avatar2.png";
+import Avatar3 from "../../assets/avatars/avatar3.png";
+import Avatar4 from "../../assets/avatars/avatar4.png";
+
+const InnerCollector = () => {
+  return (
+    <section className="collector">
+
+      <div className="collector-left">
+
+        <h2>
+          <span>Just Unleash -</span>
+          <br />
+          Your Inner Collector
+        </h2>
+
+        <ul>
+
+          <li>✔ Best Seller All Around World</li>
+          <li>✔ $2M+ Transactions Every Day</li>
+          <li>✔ Secure Transactions</li>
+          <li>✔ Exclusive Collections From Sellers</li>
+          <li>✔ Easy Buying and Selling</li>
+          <li>✔ Join Our Community</li>
+
+        </ul>
+
+        <button>
+          Explore More →
+        </button>
+
+      </div>
+
+      <div className="collector-right">
+
+        <div className="best-sellers">
+
+          <h3>Best Sellers</h3>
+
+          <div className="seller">
+            <img src={Avatar1} alt="" />
+            <span>Alex Ca.</span>
+            <button>Follow</button>
+          </div>
+
+          <div className="seller">
+            <img src={Avatar2} alt="" />
+            <span>Juliya Sa.</span>
+            <button>Follow</button>
+          </div>
+
+          <div className="seller">
+            <img src={Avatar3} alt="" />
+            <span>Juliya Sa.</span>
+            <button>Follow</button>
+          </div>
+
+          <div className="seller">
+            <img src={Avatar4} alt="" />
+            <span>Trevor Pu.</span>
+            <button>Unfollow</button>
+          </div>
+
+        </div>
+
+        <div className="recent-viewed">
+
+          <h4>Recent Viewed</h4>
+
+          <div className="recent-item">
+            <img src={Avatar1} alt="" />
+            <span>Alex Ca.</span>
+            <strong>♦ 8,456</strong>
+          </div>
+
+          <div className="recent-item">
+            <img src={Avatar2} alt="" />
+            <span>Juliya S.</span>
+            <strong>♦ 5,327</strong>
+          </div>
+
+        </div>
+
+        <div className="notification">
+
+          <img src={Avatar3} alt="" />
+
+          <div>
+            <h5>New bid Rotation</h5>
+            <p>0.002 ETH</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+  );
+};
+
+export default InnerCollector;
