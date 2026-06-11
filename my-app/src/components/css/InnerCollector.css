@@ -1,104 +1,119 @@
-import "./InnerCollector.css";
+.collector {
+  max-width: 1400px;
 
-import Avatar1 from "../../assets/avatars/avatar1.png";
-import Avatar2 from "../../assets/avatars/avatar2.png";
-import Avatar3 from "../../assets/avatars/avatar3.png";
-import Avatar4 from "../../assets/avatars/avatar4.png";
+  margin: 180px auto;
 
-const InnerCollector = () => {
-  return (
-    <section className="collector">
+  padding: 0 20px;
 
-      <div className="collector-left">
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-        <h2>
-          <span>Just Unleash -</span>
-          <br />
-          Your Inner Collector
-        </h2>
+  gap: 80px;
+}
 
-        <ul>
 
-          <li>✔ Best Seller All Around World</li>
-          <li>✔ $2M+ Transactions Every Day</li>
-          <li>✔ Secure Transactions</li>
-          <li>✔ Exclusive Collections From Sellers</li>
-          <li>✔ Easy Buying and Selling</li>
-          <li>✔ Join Our Community</li>
+.collector-left {
+  max-width: 480px;
+    width: 40%;
+   margin-left: 50px;
+}
 
-        </ul>
+.collector-subtitle {
+  display: block;
 
-        <button>
-          Explore More →
-        </button>
+  font-size: 50px;
+  font-weight: 600;
 
-      </div>
+  color: #d4d4d4;
 
-      <div className="collector-right">
+  margin-bottom: 5px;
+}
 
-        <div className="best-sellers">
+.collector-left h2 {
+  font-size: 60px;
+  font-weight: 700;
 
-          <h3>Best Sellers</h3>
+  line-height: 1.1;
 
-          <div className="seller">
-            <img src={Avatar1} alt="" />
-            <span>Alex Ca.</span>
-            <button>Follow</button>
-          </div>
+  color: #111;
 
-          <div className="seller">
-            <img src={Avatar2} alt="" />
-            <span>Juliya Sa.</span>
-            <button>Follow</button>
-          </div>
+  margin-bottom: 50px;
+}
 
-          <div className="seller">
-            <img src={Avatar3} alt="" />
-            <span>Juliya Sa.</span>
-            <button>Follow</button>
-          </div>
 
-          <div className="seller">
-            <img src={Avatar4} alt="" />
-            <span>Trevor Pu.</span>
-            <button>Unfollow</button>
-          </div>
+.collector-list {
+  list-style: none;
 
-        </div>
+  display: flex;
+  flex-direction: column;
 
-        <div className="recent-viewed">
+  gap: 22px;
 
-          <h4>Recent Viewed</h4>
+  margin-bottom: 55px;
+}
 
-          <div className="recent-item">
-            <img src={Avatar1} alt="" />
-            <span>Alex Ca.</span>
-            <strong>♦ 8,456</strong>
-          </div>
+.collector-list li {
+  font-size: 20px;
+  font-weight: 500;
 
-          <div className="recent-item">
-            <img src={Avatar2} alt="" />
-            <span>Juliya S.</span>
-            <strong>♦ 5,327</strong>
-          </div>
+  color: #555;
 
-        </div>
+  transition: all .35s ease;
+}
 
-        <div className="notification">
+.collector-list li:hover {
+  transform: translateX(12px);
 
-          <img src={Avatar3} alt="" />
+  color: #111;
+}
 
-          <div>
-            <h5>New bid Rotation</h5>
-            <p>0.002 ETH</p>
-          </div>
 
-        </div>
+.collector-btn {
+  background: #111;
+  color: white;
 
-      </div>
+  border: none;
 
-    </section>
-  );
-};
+  padding: 18px 34px;
 
-export default InnerCollector;
+  border-radius: 18px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  transition: all .35s ease;
+}
+
+.collector-btn:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,.15);
+}
+
+.collector-btn:active {
+  transform: scale(.95);
+}
+
+
+.collector-right {
+  position: relative;
+}
+
+.collector-right img {
+  width: 900px;
+  height: 613px;
+
+  object-fit: contain;
+
+  transition: all .5s ease;
+}
+
+.collector-right img:hover {
+  transform:
+    translateY(-10px)
+    scale(1.02);
+}
+
+
