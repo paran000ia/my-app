@@ -11,9 +11,13 @@ import Ellipse29 from "../assets/Ellipse29.png";
 import Ellipse30 from "../assets//Ellipse30.png";
 
 import { nftData } from "../data/nftData";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const ProductDetail = () => {
   return (
+    <>
+    <Header />
     <section className="product-detail">
 
       <div className="product-header">
@@ -223,7 +227,7 @@ const ProductDetail = () => {
 
         <h2>From Creator</h2>
 
-        <a href="/Details">
+        
             <div className="creator-grid">
 
           {nftData.map((item) => (
@@ -263,11 +267,14 @@ const ProductDetail = () => {
           ))}
 
         </div>
-        </a>
+       
 
       </div>
 
     </section>
+
+    <Footer />
+    </>
   );
 };
 

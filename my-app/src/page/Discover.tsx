@@ -31,8 +31,9 @@ export default function Discover() {
       </div>
 
       <div className="discover-grid">
-
+        
         {marketplaceData.map((item) => (
+          <a href="/Details">
           <div
             key={item.id}
             className="discover-card"
@@ -70,6 +71,8 @@ export default function Discover() {
             </div>
 
           </div>
+
+          </a>
         ))}
 
       </div>

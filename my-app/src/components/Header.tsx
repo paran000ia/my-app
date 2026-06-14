@@ -6,7 +6,9 @@ const Header = () => {
     <header className="header">
 
       <div className="logo">
-        <img src={Logo} alt="NFTSea Logo" />
+        <a href="/logo">
+          <img src={Logo} alt="NFTSea Logo" />
+        </a>
       </div>
 
       <nav>
