@@ -22,6 +22,12 @@ export default function ProfileActivity() {
     <Header />
     <section className="profile">
 
+        <a href="/btn--homeee">
+        <button className="back-btn">
+          ←
+        </button>
+        </a>
+
       <div className="profile-banner">
         <img src={Cover} alt="" />
       </div>

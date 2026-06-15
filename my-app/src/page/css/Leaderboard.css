@@ -1,0 +1,186 @@
+.leaderboard {
+  max-width: 1300px;
+
+  margin: 50px auto;
+
+  padding: 0 20px;
+
+  animation: fadeIn 1s ease;
+}
+
+.back-btn {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 50%;
+
+  background: white;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-size: 20px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+
+  transition: .3s;
+}
+
+.back-btn:hover {
+  transform: translateX(-4px);
+}
+
+.back-btn:active {
+  transform: scale(.92);
+}
+
+.leaderboard-title {
+  text-align: center;
+
+  font-size: 58px;
+
+  font-weight: 700;
+
+  margin-bottom: 45px;
+}
+
+.leaderboard-filters {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 24px;
+
+  margin-bottom: 90px;
+}
+
+.leaderboard-filters button {
+  background: white;
+
+  border: 2px solid #111;
+
+  padding: 14px 28px;
+
+  border-radius: 14px;
+
+  font-weight: 600;
+
+  transition: .3s;
+}
+
+.leaderboard-filters button:hover {
+  background: #111;
+
+  color: white;
+
+  transform: translateY(-3px);
+}
+
+.leaderboard-table {
+  width: 100%;
+}
+
+.leaderboard-head {
+  display: grid;
+
+  grid-template-columns:
+  2.5fr
+  1fr
+  1fr
+  1fr
+  1fr
+  1fr;
+
+  padding-bottom: 30px;
+
+  font-size: 18px;
+
+  font-weight: 700;
+}
+
+.leaderboard-row {
+  display: grid;
+
+  grid-template-columns:
+  2.5fr
+  1fr
+  1fr
+  1fr
+  1fr
+  1fr;
+
+  align-items: center;
+
+  padding: 40px 0;
+
+  border-bottom: 1px solid #ececec;
+
+  transition: .35s;
+}
+
+.leaderboard-row:hover {
+  transform: translateX(10px);
+
+  background: rgba(255,255,255,.6);
+}
+
+.leaderboard-user {
+  display: flex;
+
+  align-items: center;
+
+  gap: 22px;
+}
+
+.leaderboard-user img {
+  width: 72px;
+  height: 72px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  transition: .4s;
+}
+
+.leaderboard-row:hover img {
+  transform: scale(1.08);
+}
+
+.leaderboard-user h4 {
+  font-size: 22px;
+
+  margin-bottom: 5px;
+}
+
+.leaderboard-user p {
+  color: #9b9b9b;
+}
+
+.leaderboard-row span {
+  font-size: 22px;
+
+  font-weight: 600;
+}
+
+.volume {
+  font-weight: 700;
+}
+
+.green {
+  color: #37c978;
+  font-weight: 700;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

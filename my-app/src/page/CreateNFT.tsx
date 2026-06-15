@@ -9,6 +9,12 @@ export default function CreateNFT() {
     <Header />
     <section className="create-nft">
 
+        <a href="/btn-homeeee">
+        <button className="back-btn">
+          ←
+        </button>
+        </a>
+
       <h1 className="create-title">
         Create Your NFT
       </h1>

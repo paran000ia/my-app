@@ -21,6 +21,11 @@ export default function Profile() {
     <Header />
     <section className="profile">
 
+      <a href="/btn-homeee">
+        <button className="back-btn">
+          ←
+        </button>
+        </a>
 
       <div className="profile-banner">
 

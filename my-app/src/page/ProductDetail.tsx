@@ -22,9 +22,11 @@ const ProductDetail = () => {
 
       <div className="product-header">
 
+        <a href="/btn">
         <button className="back-btn">
           ←
         </button>
+        </a>
 
         <h1>Product Detail</h1>
 

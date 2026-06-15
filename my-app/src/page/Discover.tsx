@@ -10,6 +10,12 @@ export default function Discover() {
     <Header />
     <section className="discover">
 
+      <a href="/btn-homee">
+        <button className="back-btn">
+          ←
+        </button>
+        </a>
+
       <h2 className="discover-title">
         Discover NFTs
       </h2>

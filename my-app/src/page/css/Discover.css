@@ -1,7 +1,34 @@
 .discover {
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 50px auto;
   padding: 0 20px;
+}
+
+.back-btn {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 50%;
+
+  background: white;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-size: 20px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+
+  transition: .3s;
+}
+
+.back-btn:hover {
+  transform: translateX(-4px);
+}
+
+.back-btn:active {
+  transform: scale(.92);
 }
 
 .discover-title {
